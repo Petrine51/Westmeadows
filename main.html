@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Westmeadows Medical Centre</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://lh3.googleusercontent.com/p/AF1QipM_BUXQvWrzyT6F8-ceD4UZeKhi7wveXF8oCcjL=s680-w680-h510");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">Westmeadows Medical Centre</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT US</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a>
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> FEES</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Westmeadows Medical Centre</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
+    <span class="w3-large">Your local Medical Centre.</span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+
+<!-- About Section -->
+<style>
+.about-section {
+padding: 128px 40px; /* Adjusted padding for top/bottom and left/right */
+background-color: #f9f9f9; /* Background color for the about section */
+border-radius: 8px; /* Rounded corners for the section */
+text-align: center; /* Center align text within the section */
+}
+
+.about-section h3 {
+  margin-bottom: 30px; /* Space below the heading */
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  padding: 20px; /* Padding inside the about-section */
+  background-color: #ffffff; /* White background for the content */
+  border-radius: 8px; /* Rounded corners for the content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+  margin: 0 1rem; /* Margin from left and right */
+}
+</style>
+  
+<div class="about-section" id="about">
+    <h3>ABOUT US</h3>
+    <p>Westmeadows Medical Centre was first established in 1972 initially with a solo practitioner and in late 2007, the clinic was taken over by three dedicated medical practitioners. Over the past 46 years, our clinic has provided exceptional medical services to thousands of patients in the Northern suburbs of Melbourne. We have been a well-known family oriented medical practice in the community and our relationship with our patients is built on the foundation of trust, professional approach and delivering high quality of health care. As an accredited medical centre with QPA, we take the responsibility of providing quality patient outcomes. The professional conduct of our health team and staff is of highest standards and always guided by the best practice principles.</p>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container w3-dark-grey" style="padding: 128px 16px" id="work">
+    <h3 class="w3-center">Our Services</h3>
+    <p class="w3-center w3-large">What we provide for our patients</p>
+  
+    <div class="w3-row-padding" style="margin-top: 32px">
+      <div class="w3-col l3 m6 s12">
+        <div class="w3-grey w3-round-large w3-margin-bottom w3-border w3-padding">
+          <h2 class="w3-center">Consultations</h2>
+          <p class="w3-center">A two way dialogue between the doctor and the patient.</p>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 s12">
+        <div class="w3-grey w3-round-large w3-margin-bottom w3-border w3-padding">
+          <h2 class="w3-center">Care Plans</h2>
+          <p class="w3-center">Usage of the 5 free visits per year for patients to be referred to any of the accepting allied health services.</p>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 s12">
+        <div class="w3-grey w3-round-large w3-margin-bottom w3-border w3-padding">
+          <h2 class="w3-center">Health Assessment</h2>
+          <p class="w3-center">An in-depth assessment of your health. The assessment will cover medical, physical, psychological and social aspects of health.</p>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 s12">
+        <div class="w3-grey w3-round-large w3-margin-bottom w3-border w3-padding">
+          <h2 class="w3-center">Dressings</h2>
+          <p class="w3-center">Our GPs and nurses are specialized in providing dressings such as gauze, films, and foams to patients.</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="w3-row-padding" style="margin-top: 32px">
+      <div class="w3-col l3 m6 s12">
+        <div class="w3-grey w3-round-large w3-margin-bottom w3-border w3-padding">
+          <h2 class="w3-center">Prescriptions</h2>
+          <p class="w3-center">Our GPs are able to provide prescriptions for medications.</p>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 s12">
+        <div class="w3-grey w3-round-large w3-margin-bottom w3-border w3-padding">
+          <h2 class="w3-center">Pap Smears</h2>
+          <p class="w3-center">Procedure done by Dr. Ban Jamel to test women for Cervical Cancer.</p>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 s12">
+        <div class="w3-grey w3-round-large w3-margin-bottom w3-border w3-padding">
+          <h2 class="w3-center">Workcover</h2>
+          <p class="w3-center">Work related incidents covered by insurance.</p>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 s12">
+        <div class="w3-grey w3-round-large w3-margin-bottom w3-border w3-padding">
+          <h2 class="w3-center">Minor Procedures</h2>
+          <p class="w3-center">Surgery performed on superficial tissue done by GP and nurse.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+    <h3 class="w3-center">THE TEAM</h3>
+    <p class="w3-center w3-large">The ones who runs this Westmeadows Medical Centre</p>
+    <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="https://t3.ftcdn.net/jpg/05/16/27/58/360_F_516275801_f3Fsp17x6HQK0xQgDQEELoTuERO4SsWV.jpg" alt="John" style="width:100%">
+          <div class="w3-container">
+            <h3>Laith Kerr</h3>
+            <p class="w3-opacity">Practice Manager</p>
+            <p>Speaks Arabic <br> Speaks English</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="https://t3.ftcdn.net/jpg/05/16/27/58/360_F_516275801_f3Fsp17x6HQK0xQgDQEELoTuERO4SsWV.jpg" alt="Jane" style="width:100%">
+          <div class="w3-container">
+            <h3>Dr Ban Jamel</h3>
+            <p class="w3-opacity">Female General Practitioner MB.CH.FRACGP</p>
+            <p>Speaks Arabic <br> Speaks English</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Book</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="https://t3.ftcdn.net/jpg/05/16/27/58/360_F_516275801_f3Fsp17x6HQK0xQgDQEELoTuERO4SsWV.jpg" alt="Mike" style="width:100%">
+          <div class="w3-container">
+            <h3>Dr David Lee</h3>
+            <p class="w3-opacity">Male General Practitioner MB.CH.B FRACGP DIPS. OBS</p>
+            <p>Speaks Cantonese <br> Speaks English</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Book</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="https://t3.ftcdn.net/jpg/05/16/27/58/360_F_516275801_f3Fsp17x6HQK0xQgDQEELoTuERO4SsWV.jpg" alt="Dan" style="width:100%">
+          <div class="w3-container">
+            <h3>Dr Hickmat Zuhairi</h3>
+            <p class="w3-opacity">Male General Practitioner MB.CH.B FRACGP DRANZCOG.FRNZGP</p>
+            <p>Speaks Arabic <br> Speaks English</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Book</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+          <div class="w3-col l3 m6 w3-margin-bottom">
+            <div class="w3-card">
+              <img src="https://t3.ftcdn.net/jpg/05/16/27/58/360_F_516275801_f3Fsp17x6HQK0xQgDQEELoTuERO4SsWV.jpg" alt="John" style="width:100%">
+              <div class="w3-container">
+                <h3>Dr Jose Saprid</h3>
+                <p class="w3-opacity">Male General Practitioner MB.CH.B FRACGP</p>
+                <p>Speaks Filipino <br> Speaks English</p>
+                <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Book</button></p>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Pricing Section -->
+<div class="w3-container" style="padding: 128px 16px; background-color: #f5f5f5;" id="work">
+  <h3 class="w3-center">FEES</h3>
+  <p class="w3-center w3-large">What we charge for our services</p>
+
+  <div class="w3-row-padding" style="margin-top: 32px">
+    <div class="w3-col l3 m6 s12">
+      <div class="w3-white w3-round-large w3-margin-bottom w3-border w3-padding">
+        <h2 class="w3-center">Consultations</h2>
+        <p class="w3-center">For consultations with the doctors less than 20 minutes. (fee only applies to non-concession card holders)</p>
+        <p class="w3-center"><strong>Fee: $65</strong></p>
+        <p class="w3-center"><strong>Rebate: $41.40</strong></p>
+        <p class="w3-center"><strong>Out of Pocket Fee: $23.60</strong></p>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 s12">
+      <div class="w3-white w3-round-large w3-margin-bottom w3-border w3-padding">
+        <h2 class="w3-center">Long Consultations</h2>
+        <p class="w3-center">For consultations with the doctors longer than 20 minutes. (fee only applies to non-concession card holders)</p>
+        <p class="w3-center"><strong>Fee: $110</strong></p>
+        <p class="w3-center"><strong>Rebate: $80.10</strong></p>
+        <p class="w3-center"><strong>Out of Pocket Fee: $23.90</strong></p>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 s12">
+      <div class="w3-white w3-round-large w3-margin-bottom w3-border w3-padding">
+        <h2 class="w3-center">After Hours, Weekends, and Public Holidays Consultations</h2>
+        <p class="w3-center">For consultations less than 20 minutes with the doctors anytime after 8pm on weekdays, after 1pm on Saturday, and anytime on Sundays and Public Holidays. (fee only applies to non-concession card holders)</p>
+        <p class="w3-center"><strong>Fee: $80</strong></p>
+        <p class="w3-center"><strong>Rebate: $53.90</strong></p>
+        <p class="w3-center"><strong>Out of Pocket Fee: $26.10</strong></p>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 s12">
+      <div class="w3-white w3-round-large w3-margin-bottom w3-border w3-padding">
+        <h2 class="w3-center">After Hours, Weekends, and Public Holidays Long Consultations</h2>
+        <p class="w3-center">For consultations less than 20 minutes with the doctors anytime after 8pm on weekdays, after 1pm on Saturday, and anytime on Sundays and Public Holidays. (fee only applies to non-concession card holders)</p>
+        <p class="w3-center"><strong>Fee: $120</strong></p>
+        <p class="w3-center"><strong>Rebate: $97.45</strong></p>
+        <p class="w3-center"><strong>Out of Pocket Fee: $27.55</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding" style="margin-top: 32px">
+    <div class="w3-col l3 m6 s12">
+      <div class="w3-white w3-round-large w3-margin-bottom w3-border w3-padding">
+        <h2 class="w3-center">Iron Infusion</h2>
+        <p class="w3-center">a medical procedure where iron is given directly into your bloodstream through a vein.</p>
+        <p class="w3-center"><strong>Fee: $150</strong></p>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 s12">
+      <div class="w3-white w3-round-large w3-margin-bottom w3-border w3-padding">
+        <h2 class="w3-center">Dressing</h2>
+        <p class="w3-center">A medical procedure where iron is given directly into your bloodstream.</p>
+        <p class="w3-center"><strong>Fee: $10</strong></p>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 s12">
+      <div class="w3-white w3-round-large w3-margin-bottom w3-border w3-padding">
+        <h2 class="w3-center">Minor Procedures</h2>
+        <p class="w3-center">Medical procedures performed by our one of Nurses and Doctors.</p>
+        <p class="w3-center"><strong>Fee: $50</strong></p>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 s12">
+      <div class="w3-white w3-round-large w3-margin-bottom w3-border w3-padding">
+        <h2 class="w3-center">Immunisations</h2>
+        <p class="w3-center">Vaccinations provided by our healthcare professionals.</p>
+        <p class="w3-center"><strong>More Info</strong></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Let's get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> 32b Fawkner Street, Westmeadows, Victoria 3059, Australia</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: (03) 9338 2305</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Fax: (03) 9334 5668</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i> Email: info@westmeadows.com.au</p>
+    <br>
+    <form method="post" action="send_email.php">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="email" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><textarea class="w3-input w3-border" placeholder="Message" required name="Message"></textarea></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+    <!-- Image of location/map -->
+    <style>
+        .map-container {
+            width: 100%;
+            text-align: center;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 450px;
+            border: 0;
+        }
+    </style>
+    <div class="w3-container map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3157.8096643142026!2d144.88416381241325!3d-37.67717997189333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65a3cf8d85a35%3A0x7f75a29c0693cf0b!2sWestmeadows%20Medical%20Centre!5e0!3m2!1sen!2sau!4v1719222113516!5m2!1sen!2sau" 
+      height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">    </div>
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  </div>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
